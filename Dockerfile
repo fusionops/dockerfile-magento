@@ -1,4 +1,4 @@
-FROM php:7.3-cli
+FROM php:7.3-cli-alpine
 RUN apt-get update \
          && apt-get -y upgrade \
          && apt-get -y autoremove
