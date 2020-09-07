@@ -1,6 +1,6 @@
 FROM php:7.3-cli-alpine
 
-RUN apk update 
+RUN apk add --update 
 RUN apk add -y upgrade 
 RUN apk add -y \
             libfreetype6-dev \
