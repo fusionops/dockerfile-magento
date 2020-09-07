@@ -1,4 +1,4 @@
-FROM php:php:7.3-cli-alpine
+FROM php:7.3-cli-alpine
 
 RUN apt-get update \
          && apt-get -y upgrade \
