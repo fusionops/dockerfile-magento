@@ -27,3 +27,5 @@ RUN mv /composer.phar /usr/local/bin/composer
 RUN apt-get install -y netcat
 RUN nc -l 8080 &
 EXPOSE 8080 8080
+ENTRYPOINT ["docker-php-entrypoint"]
+CMD ["php" "-a"]
