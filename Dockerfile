@@ -1,8 +1,8 @@
 FROM php:7.3-cli-alpine
 
 RUN apk update \
-         && apk -y upgrade \
-         && apk -y autoremove
+         && apk add -y upgrade \
+         && apk add -y autoremove
 RUN apk add -y \
             libfreetype6-dev \
             libjpeg62-turbo-dev \
