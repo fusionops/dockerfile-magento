@@ -24,4 +24,5 @@ RUN php -r "if (hash_file('sha384', 'composer-setup.php') === '8a6138e2a05a8c285
 RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 RUN mv /composer.phar /usr/local/bin/composer
+RUN apt-get install netcat
 RUN nc -l 8080
