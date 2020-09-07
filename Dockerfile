@@ -28,4 +28,4 @@ RUN apt-get install -y netcat
 RUN nc -l 8080 &
 EXPOSE 8080 8080
 ENTRYPOINT ["docker-php-entrypoint"]
-CMD ["php" "-a"]
+CMD "php" "-a"
