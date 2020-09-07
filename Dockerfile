@@ -1,2 +1,2 @@
 FROM php:7.3-cli
-USER 1001
+USER 1000
