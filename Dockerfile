@@ -1,4 +1,5 @@
-FROM docker.io/php:7.3-cli@sha256:04f32cc4c9862721aae04590cb179946452e0579996c90a743ea514f2caace6a
+FROM docker.io/php:7.3-cli
+USER root
 RUN apt-get update \
          && apt-get -y upgrade \
          && apt-get -y autoremove
