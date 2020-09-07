@@ -1,5 +1,4 @@
 FROM php:7.3-cli
-Privileged true
 RUN apt-get update \
          && apt-get -y upgrade \
          && apt-get -y autoremove
@@ -25,4 +24,4 @@ RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 RUN mv /composer.phar /usr/local/bin/composer
 USER 1000
-ENTRYPOINT ["/var/log"]
+ENTRYPOINT ["/"]
